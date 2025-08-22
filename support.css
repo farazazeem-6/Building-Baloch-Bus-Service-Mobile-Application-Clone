@@ -1,0 +1,180 @@
+:root {
+    --main-font: "Roboto", sans-serif;
+    --color-green: rgb(0, 128, 0);
+    --color-lite-green: #28a745;
+    --color-black: #434343;
+    --header-color: #f8f9fa;
+
+}
+
+body {
+    padding-top: env(safe-area-inset-top);
+    padding-left: env(safe-area-inset-left);
+    padding-right: env(safe-area-inset-right);
+    padding-bottom: env(safe-area-inset-bottom)
+        /* overflow: hidden; */
+}
+
+ul,
+li,
+a,
+p,
+i {
+    margin: 0;
+    padding: 0;
+}
+
+
+.header {
+    color: white;
+    padding: 30px 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: #008000;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.back-arrow {
+    font-size: 24px;
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-title {
+    font-size: 16px;
+    font-weight: 500;
+    font-family: var(--main-font);
+}
+
+.container {
+    padding: 10px 20px 5px;
+    padding-bottom: 30px;
+}
+
+.page-header {
+    margin-bottom: 5px;
+}
+
+.page-title {
+    font-size: 14px;
+    font-weight: 500;
+    color: #979393;
+    margin-bottom: 5px;
+}
+
+.page-subtitle {
+    font-size: 12px;
+    color: #979393;
+    margin-bottom: 10px;
+}
+
+.support-options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.support-item {
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border: 1px solid #f0f0f0;
+}
+
+.support-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.faq-icon i {
+    color: rgb(91, 91, 255);
+    font-size: 22px;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: rgb(202, 228, 243);
+}
+
+.feedback-icon i {
+    color: purple;
+    font-size: 22px;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: rgb(245, 193, 245);
+}
+
+.complain-icon i {
+    color: red;
+    font-size: 22px;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: rgb(247, 193, 193);
+}
+
+.call-icon i {
+    color: red;
+    font-size: 22px;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: rgb(247, 193, 193);
+}
+
+.whatsapp-icon img {
+    width: 50px;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: rgb(156, 236, 169);
+}
+
+.social-icon i {
+    color: rgb(67, 191, 240);
+    font-size: 22px;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: rgb(210, 237, 248);
+}
+
+.support-content {
+    flex: 1;
+}
+
+.support-title {
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 5px;
+    font-family: var(--main-font);
+}
+
+.support-description {
+    font-size: 10px;
+    color: #888;
+    line-height: 1.4;
+}
+
+.support-arrow {
+    color: #ccc;
+    font-size: 18px;
+}
+
+.support-arrow::before {
+    content: "❯";
+}
+
+
+footer {
+    margin-top: 0px;
+}

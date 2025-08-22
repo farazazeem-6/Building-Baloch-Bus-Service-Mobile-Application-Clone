@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baloch Transport</title>
+    <!-- Manifest JSON Link  -->
+    <link rel="manifest" href="manifest.json">
+    <!-- Links For PWA  -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="apple-touch-icon" href="icon.png">
+    <!-- Google Fonts Link  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome Link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Remix Icon Link  -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <!-- Box Icon Link  -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <!-- BootStrap Link  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- CSS LINK  -->
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+    <header>
+        <div class="hamburger-btn">
+            <a href="">
+                <i class="ri-menu-2-line"></i>
+            </a>
+        </div>
+        <div class="logo">
+            <a href="" onclick="return false">
+                <img src="/images/AppLogo-1.png" alt="">
+            </a>
+        </div>
+
+        <div class="notification">
+            <a href="/notification.html">
+                <i class="fa-solid fa-bell"></i>
+            </a>
+        </div>
+    </header>
+
+
+    <!-- Carousel-Container -->
+
+    <div class="carousel-container">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+            </div>
+
+
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="/images/banner" class="d-block w-100" alt="Banner-1">
+                </div>
+                <div class="carousel-item">
+                    <img src="/images/banner-3.png" class="d-block w-100" alt="Banner-2">
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- Profile & Wallet Section  -->
+
+    <div class="profile-wallet-container">
+
+        <div class="profile-side">
+            <div class="profile-img-container">
+                <img src="/images/profile.png" alt="">
+            </div>
+            <div class="profile-details-container">
+                <a style="font-weight: 500;" href="">Faraz Azeem</a>
+                <a href="">03098495478</a>
+            </div>
+        </div>
+        <div class="wallet-side">
+            <div class="wallet-img-container">
+                <img src="/images/wallet.png" alt="">
+            </div>
+            <div class="wallet-details-container">
+                <a href="">Wallet Balance</a>
+                <a style="font-weight: 600;" href="" class="wallet-balance">***** <span class="eye-icon"><i
+                            class="fa-solid fa-eye-slash"></i></span></a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Bus Ticket& Cargo Tracking Button Section -->
+
+    <div class="bus-ticket-cargo-container">
+
+        <div class="bus-ticket-side">
+            <div class="bus-img-container">
+                <img src="/images/bus_8502463.png" alt="">
+            </div>
+            <div class="bus-ticket-text">
+                <a href="/booking.html">Bus</a>
+                <a href="/booking.html">Tickets</a>
+            </div>
+
+        </div>
+        <div class="cargo-tracking-side">
+            <div class="cargo-img-container">
+                <img style="width: 40px;" src="/images/icons8-bus-50 (1).png" alt="">
+            </div>
+            <div class="cargo-text">
+                <a href="/cargo.html">Cargo</a>
+                <a href="/cargo.html">Tracking</a>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <!-- Footer Navbar -->
+
+    <footer>
+        <a href="/index.html">
+            <i class="ri-home-4-line"></i>
+            Home
+        </a>
+        <a href="/ticket.html" class="my-ticket">
+            <i class="ri-ticket-2-line"></i>
+            My Ticket
+        </a>
+        <a href="/wallet.html" class="wallet-footer-btn">
+            <img src="/images/wallet.png" alt="">
+            My Wallet
+        </a>
+        <a href="support.html">
+            <i class="ri-customer-service-line"></i>
+            Support
+        </a>
+        <a href="/promotion.html">
+            <i class="ri-megaphone-line"></i>
+            Promotions
+        </a>
+    </footer>
+
+
+
+    <!-- SideBar Section  -->
+
+
+    <div class="sidebar-overlay">
+        <div class="sidebar-data">
+            <div class="sidebar-top-section">
+
+
+                <div class="sidebar-hamburger">
+                    <i class="ri-menu-2-line"></i>
+                </div>
+                <div class="sidebar-profile-section">
+                    <div class="sidebar-profile-img">
+                        <img src="/images/sidebar-profile.png" alt="">
+                    </div>
+                    <div class="sidebar-profile-details">
+                        <div class="sidebar-profile-text">
+                            <p>Faraz Azeem</p>
+                            <p>farazazeem66@gmail.com</p>
+                            <p>03098495478</p>
+                        </div>
+                        <div class="sidebar-profile-edit">
+                            <a href="">
+                                <i class="fa-solid fa-pen-to-square"></i>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="sidebar-bottom-section">
+                <a href="" class="sidebar-active" id="home">
+                    <i class="ri-home-4-line"></i> <span>Home</span>
+                </a>
+                <a href="" id="myAccount">
+                    <i class="ri-user-3-fill"></i> <span>My Account</span>
+                </a>
+                <a href="" id="myTicket">
+                    <i class="ri-ticket-2-line"></i> <span>My Ticket</span>
+                </a>
+                <a href="wallet.html" id="myWallet">
+                    <i class="ri-wallet-fill"></i> <span>My Wallet</span>
+                </a>
+                <a href="/promotion.html" id="myPromotion">
+                    <i class="ri-megaphone-line"></i> <span>Promotions</span>
+                </a>
+                <a href="/notification.html" id="myNotification">
+                    <i class="fa-solid fa-bell"></i> <span>Notifications</span>
+                </a>
+                <a href="/support.html" id="mySupport">
+                    <i class="ri-customer-service-line"></i> <span>Support</span>
+                </a>
+                <a href="">
+                    <i class="ri-logout-box-r-line"></i> <span>Logout</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('/sw.js');
+        }
+    </script> -->
+
+    <script src="main.js"></script>
+
+</body>
+
+</html>

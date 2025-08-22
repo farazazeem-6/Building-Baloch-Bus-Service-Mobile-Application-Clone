@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baloch Transport</title>
+    <!-- Manifest JSON Link  -->
+    <link rel="manifest" href="manifest.json">
+    <!-- Links For PWA  -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="apple-touch-icon" href="icon.png">
+    <!-- Google Fonts Link  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome Link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Remix Icon Link  -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <!-- Box Icon Link  -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <!-- BootStrap Link  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- CSS LINK  -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="wallet.css">
+
+</head>
+
+<body>
+
+
+    <div class="wallet-header">
+
+        <div class="wallet-heading">
+            <div class="arrow">
+                <i class="ri-arrow-left-line"></i>
+                <p>Baloch Wallet</p>
+            </div>
+
+            <div class="wallet-balance">
+                <p>Your Wallet Balance</p>
+                <h4>PKR 0</h4>
+            </div>
+        </div>
+        <div class="add-balance-btn">
+            <button>+ Add / Topup Baloch Wallet</button>
+        </div>
+    </div>
+
+    <div class="wallet-body">
+        <div class="wallet-body-heading">
+            <p>All Transactions Details</p>
+        </div>
+        <div class="wallet-body-data">
+            No History
+        </div>
+    </div>
+
+
+
+
+    <!-- Footer Navbar -->
+
+    <footer>
+        <a href="/index.html">
+            <i class="ri-home-4-line"></i>
+            Home
+        </a>
+        <a href="/ticket.html" class="my-ticket">
+            <i class="ri-ticket-2-line"></i>
+            My Ticket
+        </a>
+        <a href="/wallet.html" class="wallet-footer-btn">
+            <img src="/images/wallet.png" alt="">
+            My Wallet
+        </a>
+        <a href="/support.html">
+            <i class="ri-customer-service-line"></i>
+            Support
+        </a>
+        <a href="/promotion.html">
+            <i class="ri-megaphone-line"></i>
+            Promotions
+        </a>
+    </footer>
+
+
+    <script>
+
+        let backBtn = document.querySelector('.arrow i');
+
+        backBtn.addEventListener('click', function () {
+            history.back()
+        })
+
+    </script>
+</body>
+
+</html>

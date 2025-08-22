@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --main-font: "Roboto", sans-serif;
+    --color-green: rgb(0, 128, 0);
+    --color-lite-green: #28a745;
+    --color-black: #434343;
+    --header-color: #f8f9fa;
+
+}
+
+ul,
+li,
+a,
+p,
+i {
+    margin: 0;
+    padding: 0;
+}
+
+
+.header {
+    background-color: #008000;
+    color: white;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: space-between;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+}
+
+.back-arrow {
+    font-size: 22px;
+    cursor: pointer;
+    width: 24px;
+    height: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-title {
+    font-size: 14px;
+    font-weight: 400;
+    font-family: var(--main-font);
+}
+
+.container {
+    padding: 20px;
+}
+
+.profile-card {
+    background-color: #008000;
+    border-radius: 20px;
+    padding: 30px 45px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 15px rgba(76, 175, 80, 0.3);
+}
+
+.profile-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.avatar img {
+    width: 60px;
+    border: 5px solid skyblue;
+    border-radius: 50%;
+}
+
+.user-details {
+    color: white;
+}
+
+.user-name {
+    font-size: 16px;
+    font-weight: 400;
+    /* margin-bottom: 8px; */
+}
+
+.user-email {
+    font-size: 12px;
+    opacity: 0.9;
+    margin-bottom: 5px;
+}
+
+.user-phone {
+    font-size: 12px;
+    opacity: 0.9;
+}
+
+.edit-button {
+    background: white;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 25px;
+    font-size: 13px;
+    font-weight: 400;
+    color: #333;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.2s ease;
+    width: 100%;
+    justify-content: center;
+}
+
+.edit-button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+
+.menu-section {
+    background: white;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+}
+
+.menu-item {
+    padding: 6px 20px;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    border-bottom: 1px solid #f0f0f0;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.menu-item:last-child {
+    border-bottom: none;
+}
+
+.menu-item:hover {
+    background-color: #f8f9fa;
+}
+
+
+.phone-icon i {
+    font-size: 26px;
+    border: 1px solid #008000;
+    color: #008000;
+    border-radius: 3px;
+}
+
+.email-icon i {
+    font-size: 26px;
+    border: 1px solid #008000;
+    color: #008000;
+    border-radius: 3px;
+}
+
+.password-icon i {
+    font-size: 26px;
+    border: 1px solid #008000;
+    color: #008000;
+    border-radius: 3px;
+}
+
+.delete-icon i {
+    font-size: 20px;
+    border: 1px solid #008000;
+    color: #008000;
+    border-radius: 3px;
+    padding: 5px;
+}
+
+.logout-icon i {
+    font-size: 20px;
+    border: 1px solid #008000;
+    color: #008000;
+    border-radius: 3px;
+    padding: 5px;
+}
+
+.menu-text {
+    flex: 1;
+    font-size: 14px;
+    font-family: var(--main-font);
+    color: #333;
+    font-weight: 400;
+}
+
+.menu-arrow {
+    color: #ccc;
+    font-size: 26px;
+}
+
+.menu-arrow::before {
+    content: "❯";
+}
+
+.footer {
+    text-align: center;
+    padding: 0px 0px;
+    color: #666;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    background-color: rgb(201, 235, 248);
+    margin: 145px 80px 0px;
+}
+
+.footer-title {
+    font-size: 10px;
+    margin-bottom: 3px;
+}
+
+.footer-subtitle {
+    font-size: 10px;
+    font-weight: 300;
+}
