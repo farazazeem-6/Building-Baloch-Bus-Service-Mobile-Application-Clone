@@ -32,6 +32,10 @@
         integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- Tailwind Datepicker CSS -->
+
+
     <!-- CSS LINK  -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="booking.css">
@@ -52,15 +56,40 @@
 
             <div class="cargo-head-container">
                 <div class="cargo-head-data">
-                    <div class="departure-input both">
+                    <!-- <div class="departure-input both">
                         <img src="/images/icons8-circle-64.png" alt="">
                         <input type="text" name="" id="departure" placeholder="Enter from city">
+                    </div> -->
+
+                    <div class="departure-input both" onclick="window.location.href='nextpage.html'"
+                        style="cursor: pointer;">
+                        <img src="/images/icons8-circle-64.png" alt="">
+                        <input type="text" value="" id="departure" placeholder="Enter from city"
+                            style="pointer-events: none;" />
                     </div>
 
-                    <div class="destination-input both">
+
+                    <div class="shifing-arrow">
+                        <!-- <i class="fa-solid fa-arrow-down"></i> -->
+                        <img src="/images/icons8-down-arrow-48.png" alt="">
+                    </div>
+
+
+
+                    <!-- <div class="destination-input both">
                         <img src="/images/icons8-location-24.png" alt="">
                         <input type="text" name="" id="destination" placeholder="Enter to city">
+                    </div> -->
+
+
+                    <div class="destination-input both" style="cursor: pointer;">
+                        <img src="/images/icons8-location-24.png" alt="">
+                        <input type="text" value="" id="destination" placeholder="Enter to city"
+                            style="pointer-events: none;" />
                     </div>
+
+
+
 
                     <div class="date-container">
                         <div class="date-box">
@@ -88,11 +117,18 @@
                             <div class="date">21</div>
                             <div class="date-detail"><span class="month">Aug</span><span class="year">2025</span></div>
                         </div>
-                        <div class="calender-box">
+                        <div class="date-box">
+                            <div class="day">Thursday</div>
+                            <div class="date">21</div>
+                            <div class="date-detail"><span class="month">Aug</span><span class="year">2025</span></div>
+                        </div>
+
+
+                        <!-- <div class="calender-box">
                             <a href=""></a>
                             <img src="/images/icons8-calender-64.png" alt="">
                             <p>Select Date</p>
-                        </div>
+                        </div> -->
 
                     </div>
 
@@ -102,7 +138,6 @@
         </div>
 
     </div>
-
 
 
     <script src="/booking.js"></script>

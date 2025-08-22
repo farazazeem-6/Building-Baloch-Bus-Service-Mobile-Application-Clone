@@ -6,6 +6,7 @@
         --header-color: #f8f9fa;
     }
 
+
     .cargo-container {
         margin: 0 auto;
         position: relative;
@@ -95,6 +96,19 @@
     }
 
 
+    .departure-input input {
+        font-size: 14px;
+        font-family: var(--main-font);
+        font-weight: 300;
+        color: #434343;
+    }
+
+    .destination-input input {
+        font-size: 14px;
+        font-family: var(--main-font);
+        font-weight: 300;
+        color: #434343;
+    }
 
     input {
         width: 100%;
@@ -102,6 +116,7 @@
         margin-top: 15px;
         position: relative;
         border: 1px solid #008000;
+        border-radius: 11px;
     }
 
     input:focus {
@@ -196,4 +211,23 @@
         font-size: 7px;
         color: #008000;
         font-weight: 500;
+    }
+
+    .shifing-arrow {
+        position: absolute;
+        padding: 7px 7px;
+        border-radius: 5px;
+        background-color: #008000;
+        top: 140px;
+        z-index: 2000;
+        right: 50px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+
+    .shifing-arrow i {
+        color: #ffffff;
+    }
+
+    .shifing-arrow img {
+        width: 30px;
     }
