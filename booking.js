@@ -14,6 +14,41 @@ let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "S
 let months = ["January", "February", "March", "April", "May", "June",
     "July", "August", "September", "October", "November", "December"];
 
+let dateBox = document.querySelectorAll('.date-box');
+
+let boxFlag = false;
+dateBox.forEach((box) => {
+    box.addEventListener('click', function () {
+        localStorage.removeItem('dayData');
+        localStorage.removeItem('dateData');
+        localStorage.removeItem('monthData');
+        localStorage.removeItem('yearData');
+        dateBox.forEach((b) => {
+            b.style.backgroundColor = ''
+            b.querySelectorAll('*').forEach((el) => {
+                el.style.color = ''
+            })
+        })
+        box.style.backgroundColor = '#008000';
+        box.querySelectorAll('*').forEach((el) => {
+            el.style.color = 'white';
+            boxFlag = true;
+
+
+        })
+        let dayValue = box.querySelector('.day').textContent;
+        let dateValue = box.querySelector('.date').textContent;
+        let monthValue = box.querySelector('.month').textContent;
+        let yearValue = box.querySelector('.year').textContent;
+
+        localStorage.setItem('dayData', dayValue);
+        localStorage.setItem('dateData', dateValue);
+        localStorage.setItem('monthData', monthValue);
+        localStorage.setItem('yearData', yearValue);
+    });
+});
+
+
 let today = new Date();
 
 let startDay = today.getDay();
@@ -50,31 +85,79 @@ let DestinationCity = localStorage.getItem('destination city')
 // console.log(selectedCity);
 let departureInputValue = document.querySelector('.departure-input input')
 let destinationInputValue = document.querySelector('.destination-input input')
-departureInputValue.value = DepartureCity
-destinationInputValue.value = DestinationCity
+if (departureInputValue) {
+    departureInputValue.value = DepartureCity
+}
+if (destinationInputValue) {
+    destinationInputValue.value = DestinationCity
+}
 
-departureInput.addEventListener('click', function () {
-    window.location.href = 'departure-list.html'
-})
-destinationInput.addEventListener('click', function () {
-    window.location.href = 'destination-list.html'
-})
+if (departureInput) {
+    departureInput.addEventListener('click', function () {
+        window.location.href = 'departure-list.html'
+    })
+}
+
+if (destinationInput) {
+    destinationInput.addEventListener('click', function () {
+        window.location.href = 'destination-list.html'
+    })
+}
 
 
 let shifingArrow = document.querySelector('.shifing-arrow');
 
 
-let flag = true
-shifingArrow.addEventListener('click', function () {
-    if (flag) {
-        departureInputValue.value = DestinationCity
-        destinationInputValue.value = DepartureCity
-        flag = false
+let flag = true;
+if (shifingArrow) {
+    shifingArrow.addEventListener('click', function () {
+        if (flag) {
+            departureInputValue.value = DestinationCity
+            destinationInputValue.value = DepartureCity
+            flag = false
+        }
+        else {
+            departureInputValue.value = DepartureCity
+            destinationInputValue.value = DestinationCity
+            flag = true
+        }
+
+    })
+}
+
+
+function validationFunction() {
+    let flag = true;
+    if (departureInputValue.value === '') {
+        alert('Select a departure city');
+        flag = false;
+        return
     }
-    else {
-        departureInputValue.value = DepartureCity
-        destinationInputValue.value = DestinationCity
-        flag = true
+    if (destinationInputValue.value === '') {
+        alert('Select a destination city');
+        flag = false;
+        return
+    }
+    if (destinationInputValue.value === departureInputValue.value) {
+        alert('Departure and Destination city cannot be same');
+        flag = false;
+        return
+    }
+    if (!boxFlag) {
+        alert('Select a date');
+        flag = false;
+        return
+    }
+    if (flag) {
+        window.location.href = 'routes.html'
     }
 
-})
+}
+
+let searchBtn = document.querySelector('.search-btn');
+
+if (searchBtn) {
+    searchBtn.addEventListener('click', function () {
+        validationFunction()
+    })
+}

@@ -1,0 +1,361 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --main-font: "Roboto", sans-serif;
+    --color-green: rgb(0, 128, 0);
+    --color-lite-green: #28a745;
+    --color-black: #434343;
+    --header-color: #f8f9fa;
+
+}
+
+ul,
+li,
+a,
+p,
+i {
+    margin: 0;
+    padding: 0;
+}
+
+.seat-header {
+    background-color: #008000;
+    padding: 10px 10px 15px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.backBtn i {
+    color: white;
+    font-size: 22px;
+}
+
+.seat-heading-text {
+    display: flex;
+    align-items: center;
+
+}
+
+.seat-heading-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.seat-heading-city-data {
+    display: flex;
+    color: white;
+    font-family: var(--main-font);
+    font-weight: 300;
+    font-size: 12px;
+}
+
+.seat-heading-time-text {
+    display: flex;
+    gap: 5px;
+    color: white;
+    font-family: 300;
+    font-size: 12px;
+    font-family: var(--main-font);
+}
+
+.seat-timer {
+    padding: 3px 5px;
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.seat-timer p {
+    color: black;
+    font-family: var(--main-font);
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.seat-status {
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: var(--main-font);
+    color: black;
+}
+
+.available-seat,
+.selected-seat,
+.male-seat,
+.female-seat {
+    font-weight: 200;
+    display: flex;
+    gap: 3px;
+    font-size: 12px;
+    align-items: center;
+
+}
+
+.available-seat i {
+    color: #434343;
+    font-size: 20px;
+    font-weight: 100;
+}
+
+.selected-seat i {
+    color: #28a745;
+    font-size: 20px;
+    font-weight: 100;
+}
+
+.male-seat i {
+    color: red;
+    font-size: 20px;
+    font-weight: 100;
+}
+
+.female-seat i {
+    color: rgb(252, 108, 151);
+    font-size: 20px;
+    font-weight: 100;
+}
+
+.seat-list {
+    padding: 10px 30px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    justify-content: space-between;
+
+}
+
+.seat-first-row {
+    display: flex;
+    gap: 20px;
+}
+
+.seat-second-row {
+    display: flex;
+    gap: 20px;
+}
+
+
+.seat-left-first {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+}
+
+.seat-left-second {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+}
+
+.seat-right-first {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+}
+
+.seat-right-second {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+}
+
+.seat {
+    position: relative;
+    display: inline-block;
+}
+
+.seat-icon {
+    font-size: 50px;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 200;
+}
+
+.available i {
+    color: #a1a1a1;
+}
+
+.male i {
+    color: red;
+}
+
+.female i {
+    color: rgb(252, 108, 151);
+}
+
+.seat-number {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #000;
+    border-radius: 15px;
+    font-size: 14px;
+    font-family: var(--main-font);
+    z-index: 10;
+    font-weight: 400;
+}
+
+
+
+.seat-submit-detail-container {
+    position: absolute;
+    bottom: 1px;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding: 20px 20px;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.slash {
+    border: 2px solid #ebebeb;
+    border-radius: 30px;
+    width: 30%;
+    margin: auto;
+}
+
+.payment-amount {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.payment-amount p {
+    font-size: 14px;
+    color: #000;
+    font-weight: 400;
+    font-family: var(--main-font);
+}
+
+.discount-amount p {
+    font-size: 14px;
+    color: #000;
+    font-weight: 400;
+    font-family: var(--main-font);
+    font-weight: 400;
+    font-family: var(--main-font);
+}
+
+.discount-amount {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.continue-btn button {
+    border: none;
+    border-radius: 18px;
+    background-color: #008000;
+    color: white;
+    font-size: 14px;
+    width: 100%;
+    font-weight: 500;
+    padding: 10px 15px;
+}
+
+.gender-modal-overlay {
+    width: 900px;
+    margin: auto;
+    border-radius: 10px;
+    max-width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.4);
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    display: none;
+}
+
+.gender-modal-data {
+    background-color: #fff;
+    max-width: 400px;
+    width: 70%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    position: relative;
+    transition: right 0.3s ease;
+    border-radius: 15px;
+}
+
+.gender-modal-header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #008000;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+.close-modal i {
+    font-size: 18px;
+}
+
+.gender-modal-header p {
+    font-size: 14px;
+    font-weight: 500;
+    font-family: var(--main-font);
+}
+
+.gender-modal-body {
+    padding: 10px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.male-modal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: var(--main-font);
+    font-size: 12px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 10px;
+    padding: 8px 18px;
+}
+
+.male-modal img {
+    width: 30px;
+}
+
+.female-modal img {
+    width: 30px;
+}
+
+.female-modal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: var(--main-font);
+    font-size: 12px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 10px;
+    padding: 8px 8px;
+}

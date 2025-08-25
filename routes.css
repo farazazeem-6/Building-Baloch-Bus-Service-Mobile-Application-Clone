@@ -1,0 +1,349 @@
+    :root {
+        --main-font: "Roboto", sans-serif;
+        --color-green: rgb(0, 128, 0);
+        --color-lite-green: #28a745;
+        --color-black: #434343;
+        --header-color: #f8f9fa;
+    }
+
+    .heading-text {
+        font-size: 14px;
+        font-weight: 600;
+        color: #434343;
+        margin: 14px 15px 5px;
+    }
+
+    .mobile-container {
+        margin: 0 auto;
+        background: white;
+        position: relative;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Header Section */
+    .header {
+        background: #008000;
+        position: relative;
+        color: white;
+        border-radius: 0 0 20px 20px;
+        font-family: var(--main-font);
+        padding: 10px 0px 10px;
+    }
+
+    .nav-header {
+        display: flex;
+        align-items: center;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .back-arrow {
+        width: 24px;
+        height: 24px;
+        cursor: pointer;
+    }
+
+    .back-arrow i {
+        font-size: 22px;
+    }
+
+    .page-title {
+        font-size: 14px;
+        font-weight: 500;
+        flex: 1;
+        text-align: center;
+        margin-right: 44px;
+        font-family: var(--main-font);
+    }
+
+    .date-container {
+        padding: 10px 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+    }
+
+    .date-box {
+        border: 1px solid #008000;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 8px 6px;
+        border-radius: 8px;
+        gap: 5px;
+
+    }
+
+    .day {
+        font-size: 7px;
+        color: #008000;
+        font-weight: 500;
+    }
+
+    .date {
+        font-size: 14px;
+        color: #008000;
+        font-weight: 500;
+    }
+
+    .date-detail {
+        font-size: 7px;
+        color: #008000;
+        font-weight: 500;
+    }
+
+
+    /* Cards CSS  */
+
+    .booking-card {
+        background: white;
+        border-radius: 20px;
+        padding: 0;
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        margin: 20px 10px;
+    }
+
+
+    .booking-card::before {
+        content: '';
+        position: absolute;
+        right: 140px;
+        top: 10px;
+        bottom: 30px;
+        width: 2px;
+        background-image: repeating-linear-gradient(to bottom,
+                #ccc 0px,
+                #ccc 6px,
+                transparent 6px,
+                transparent 12px);
+        z-index: 1;
+    }
+
+
+    .booking-card::after {
+        content: '';
+        position: absolute;
+        right: 128px;
+        top: -12px;
+        width: 24px;
+        height: 24px;
+        background: #f5f5f5;
+        border-radius: 50%;
+        z-index: 2;
+    }
+
+
+    .cutout-bottom {
+        position: absolute;
+        right: 128px;
+        bottom: -12px;
+        width: 24px;
+        height: 24px;
+        background: #f5f5f5;
+        border-radius: 50%;
+        z-index: 2;
+    }
+
+    .left-section {
+        flex: 1;
+        padding: 18px 20px 14px 12px;
+    }
+
+    .right-section {
+        width: 140px;
+        padding: 14px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        gap: 5px;
+    }
+
+
+    .time-section {
+        display: flex;
+        align-items: center;
+        /* margin-bottom: 10px; */
+    }
+
+    .clock-icon {
+        padding-right: 5px;
+    }
+
+    .clock-icon i {
+        font-size: 16px;
+        color: #008000;
+        font-weight: 100;
+    }
+
+
+    .time-text {
+        font-size: 16px;
+        font-weight: 500;
+        color: #000;
+        letter-spacing: -0.5px;
+    }
+
+    .company-section {
+        margin-top: 5px;
+        display: flex;
+        /* align-items: center; */
+        flex-direction: column;
+        justify-content: center;
+        gap: 5px;
+    }
+
+    .company-info {
+        display: flex;
+        align-items: center;
+        /* margin-bottom: 8px; */
+        /* justify-content: center; */
+
+    }
+
+    .company-dot {
+        padding-right: 5px;
+    }
+
+    .company-dot i {
+        font-size: 10px;
+        color: blue;
+        font-weight: 500;
+    }
+
+    .company-name {
+        font-size: 12px;
+        font-weight: 600;
+        color: #000;
+    }
+
+    .route-info {
+        display: flex;
+        align-items: center;
+        /* margin-left: 24px; */
+    }
+
+    .route-text {
+        font-size: 12px;
+        color: #000;
+        font-weight: 600;
+    }
+
+    .seats-section {
+        display: flex;
+        align-items: center;
+        margin-top: 5px;
+    }
+
+    .seat-icon {
+        padding-right: 5px;
+    }
+
+    .seat-icon i {
+        font-size: 12px;
+        color: #008000;
+    }
+
+    .seats-text {
+        font-size: 12px;
+        color: #666;
+        /* margin-right: 8px; */
+    }
+
+    .seats-count {
+        font-size: 12px;
+        font-weight: 500;
+        color: #008000;
+        /* margin-right: 8px; */
+        padding-left: 5px;
+    }
+
+    .info-icon i {
+        font-size: 14px;
+        color: #008000;
+        padding-left: 5px;
+    }
+
+    /* Right section styling */
+    .class-tag {
+        background: red;
+        padding: 2px 5px;
+        font-size: 8px;
+        font-weight: 400;
+        color: white;
+        letter-spacing: 0.5px;
+        text-align: center;
+        clip-path: polygon(100% 0, 100% 3%, 95% 51%, 100% 100%, 100% 100%, 0 100%, 0 0);
+    }
+
+    .class-tag p {
+        animation: blink 1s steps(1, start) infinite;
+        display: inline-block;
+
+    }
+
+    @keyframes blink {
+        0% {
+            visibility: visible;
+        }
+
+        50% {
+            visibility: hidden;
+        }
+
+        100% {
+            visibility: visible;
+        }
+    }
+
+    .price-container {
+        text-align: center;
+        /* margin-bottom: 10px; */
+    }
+
+    .current-price {
+        font-size: 18px;
+        font-weight: 500;
+        color: #008000;
+        margin-bottom: 2px;
+        line-height: 1;
+    }
+
+    .original-price {
+        font-size: 14px;
+        color: red;
+        text-decoration: line-through;
+        font-weight: 300;
+    }
+
+    .buy-button {
+        background: #008000;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        padding: 4px 10px;
+        font-size: 14px;
+        font-weight: 400;
+        width: 100%;
+        cursor: pointer;
+    }
+
+    .location-dot {
+        padding-right: 5px;
+    }
+
+    .location-dot i {
+        font-size: 12px;
+        color: #008000;
+    }
+
+    .bus-class {
+        font-size: 12px;
+        color: #5e5c5c;
+        font-weight: 600;
+    }

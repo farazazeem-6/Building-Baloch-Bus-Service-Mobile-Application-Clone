@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --main-font: "Roboto", sans-serif;
+    --color-green: rgb(0, 128, 0);
+    --color-lite-green: #28a745;
+    --color-black: #434343;
+    --header-color: #f8f9fa;
+
+}
+
+.mobile-container {
+    margin: 0 auto;
+    background: white;
+    position: relative;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Header Section */
+.header {
+    background: #008000;
+    position: relative;
+    color: white;
+    border-radius: 0 0 20px 20px;
+    font-family: var(--main-font);
+    padding: 1px 0px;
+}
+
+.nav-header {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+}
+
+.back-arrow {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.back-arrow i {
+    font-size: 22px;
+}
+
+.page-title {
+    font-size: 14px;
+    font-weight: 500;
+    flex: 1;
+    text-align: center;
+    margin-right: 44px;
+    font-family: var(--main-font);
+}
+
+/* Boarding Container  */
+
+.boarding-container {
+    padding: 15px 10px;
+}
+
+.terminal-selection {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 30px;
+    padding: 10px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.terminal-selection p {
+    font-size: 12px;
+    font-weight: 400;
+    font-family: var(--main-font);
+}
+
+.terminal-adress-text {
+    margin-top: 20px;
+}
+
+.terminal-adress-text p {
+    font-size: 11px;
+    color: black;
+    font-family: var(--main-font);
+    font-weight: 400;
+}
+
+.terms-conditions {
+    margin-top: 20px;
+}
+
+.terms-heading {
+    font-size: 14px;
+    font-family: var(--main-font);
+    font-weight: 600;
+
+}
+
+.terms-text {
+    background-color: #008000;
+    color: white;
+    padding: 9px;
+    margin-top: 10px;
+    border-radius: 20px;
+
+}
+
+.terms-text img {
+    width: 100%;
+}
+
+.continue-btn-section {
+    position: absolute;
+    bottom: 1px;
+    padding: 10px 20px 20px;
+}
+
+.continue-btn-section span {
+    font-size: 12px;
+    font-weight: 500;
+    color: #434343;
+    font-family: var(--main-font);
+}
+
+.continue-btn-section input {
+    margin-left: 70px;
+}
+
+.continue-btn {
+    margin-top: 10px;
+    width: 100%;
+    border: none;
+    background-color: #008000;
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 10px 14px;
+    border-radius: 30px;
+}

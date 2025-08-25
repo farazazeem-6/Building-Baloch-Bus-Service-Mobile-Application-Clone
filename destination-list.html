@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Baloch Transport</title>
     <!-- Manifest JSON Link  -->
     <link rel="manifest" href="manifest.json">
@@ -62,7 +62,7 @@
 
         input {
             border-radius: 25px;
-            font-size: 10px;
+            font-size: 16px;
         }
 
 
@@ -107,7 +107,7 @@
     <div class="destination-header">
         <div class="destination-input both">
             <img src="/images/icons8-search-48 (1).png" alt="">
-            <input type="text" name="" id="departure" placeholder="Select to city">
+            <input type="text" name="" id="destination" placeholder="Select to city">
         </div>
         <button class="destination-cancel">Cancel</button>
     </div>
@@ -120,46 +120,68 @@
         })
 
 
-
         const pakistaniCities = [
-            "Abdul Hakim Interchange",
+            "Islamabad",
             "Adda 217",
-            "Ahmad Pur Sial",
+            "Multan",
             "Bhakkar",
             "Chak 98 ML",
             "Chaubara",
             "Chowk Azam",
             "Chowk Sarwar Shaheed",
             "Daira Din Panah",
-            "Darya Khan",
+            "Layyah",
             "Dera Ghazi Khan",
             "Dhori Adda",
             "Faisalabad",
             "Fateh Pur",
             "Garh Maharaja",
-            "Garh More",
+            "Lahore",
             "Gojra City",
         ];
 
         let locationContainer = document.createElement('div');
         locationContainer.className = 'location-container';
+        document.body.appendChild(locationContainer);
 
 
-        for (let i = 0; i < pakistaniCities.length; i++) {
-            let locationItem = document.createElement('div');
-            locationItem.className = 'location-item'
-            locationItem.textContent = pakistaniCities[i]
+        function generateList(arr) {
 
-            locationItem.addEventListener('click', function () {
+            locationContainer.innerHTML = '';
+            for (let i = 0; i < arr.length; i++) {
+                let locationItem = document.createElement('div');
+                locationItem.className = 'location-item'
+                locationItem.textContent = arr[i]
 
-                localStorage.setItem('destination city', locationItem.textContent);
-                window.location.href = 'booking.html'
+                locationItem.addEventListener('click', function () {
+                    localStorage.setItem('destination city', locationItem.textContent);
+                    window.location.href = 'booking.html'
 
-            });
-            locationContainer.appendChild(locationItem);
+                });
+                locationContainer.appendChild(locationItem);
+            }
+
         }
 
-        document.body.appendChild(locationContainer);
+        generateList(pakistaniCities)
+
+
+        let destinationInput = document.querySelector('#destination')
+
+        destinationInput.addEventListener('input', function () {
+            let newCities = pakistaniCities.filter(city => {
+                return city.toLowerCase().startsWith(destinationInput.value.toLowerCase())
+
+            })
+            document.querySelector('.location-container').innerHTML = ''
+            generateList(newCities)
+        })
+
+
+
+
+
+
     </script>
 </body>
 

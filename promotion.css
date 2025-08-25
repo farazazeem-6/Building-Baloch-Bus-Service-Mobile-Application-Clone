@@ -42,10 +42,11 @@
 
    .page-title {
        font-size: 14px;
-       font-weight: 400;
+       font-weight: 500;
        flex: 1;
        text-align: center;
        margin-right: 44px;
+       font-family: var(--main-font);
    }
 
    .tab-container {
